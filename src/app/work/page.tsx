@@ -24,7 +24,7 @@ function CaseStudies({
     <Container className="mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          case studies
+          projects
         </h2>
       </FadeIn>
       <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
@@ -67,9 +67,9 @@ function CaseStudies({
                   <div className="mt-8 flex">
                     <Button
                       href={caseStudy.href}
-                      aria-label={`Read case study: ${caseStudy.client}`}
+                      aria-label={`view project: ${caseStudy.client}`}
                     >
-                      read case study
+                      view project
                     </Button>
                   </div>
                   {caseStudy.testimonial && (
