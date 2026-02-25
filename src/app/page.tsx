@@ -124,13 +124,15 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="What we do"
-        title="We build software that stands at the intersection of innovation and craft."
+        eyebrow="explanation"
+        title="the philosophy behind the organization's releases"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          From concept to deployment, we bring a quality-first approach to every
-          layer of the stack — always exploring what is next in technology.
+          after everything that has happened in development, only software is simply
+          not enough for creating a useful product. therefore we focus on building a 
+          product with a good balance of creativity, quality and innovation \w using 
+          the most unique technologies available.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -198,14 +200,14 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
+      {/* <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'inth3loop', logo: logoPhobiaDark }}
       >
         Quality is not an act, it is a habit. We build every product with the
         conviction that authentic craftsmanship and cutting-edge technology are
         not opposites — they are the same thing.
-      </Testimonial>
+      </Testimonial> */}
 
       <Services />
 
