@@ -1,0 +1,59 @@
+import logo from '@/images/clients/sigloop/logomark-dark.svg'
+import imageHero from './hero.jpg'
+
+export const caseStudy = {
+  client: 'sigloop',
+  title: 'wallets for agents that pay',
+  description:
+    'sigloop is the payment layer the agentic web needs — providing AI agents with smart contract wallets featuring safety limitations, session keys, scoped permissions, and native HTTP 402 payment automation.',
+  summary: [
+    'sigloop is the payment layer the agentic web needs — providing AI agents with smart contract wallets featuring safety limitations, session keys, scoped permissions, and native HTTP 402 payment automation.',
+    'built on ERC-4337 account abstraction, sigloop lets developers give their agents secure, budget-controlled wallets without managing EntryPoints, UserOps, or bundler infrastructure.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-06',
+  service: 'smart contracts, SDK, web3',
+  testimonial: {
+    author: { name: 'Cătălin Tișcă', role: 'founder of sigloop' },
+    content:
+      'sigloop was born from a simple realization: AI agents need to transact autonomously, but they should never have unchecked access to funds. we built the guardrails that make agent payments safe.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} case study`,
+  description: caseStudy.description,
+}
+
+## overview
+
+as AI agents become increasingly autonomous, they need the ability to make payments on behalf of users — but with strict safety guarantees. sigloop provides smart contract wallets purpose-built for this new paradigm, where agents can transact within well-defined boundaries.
+
+the core challenge was enabling autonomous payments while keeping users in control. traditional wallets give all-or-nothing access — either an agent has the private key or it doesn't. sigloop introduces a middle ground with session keys, scoped permissions, and on-chain budget guardrails.
+
+built on the ERC-4337 account abstraction standard, sigloop eliminates seed phrases entirely. users onboard with passkeys alone, and agents receive time-bound, contract-scoped permissions that can be revoked instantly.
+
+## what we did
+
+<TagList>
+  <TagListItem>smart contract development</TagListItem>
+  <TagListItem>ERC-4337 integration</TagListItem>
+  <TagListItem>SDK design</TagListItem>
+  <TagListItem>security architecture</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Cătălin Tișcă', role: 'founder of sigloop' }}
+>
+  sigloop was born from a simple realization: AI agents need to transact
+  autonomously, but they should never have unchecked access to funds. we built
+  the guardrails that make agent payments safe.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="HTTP 402" label="native payment automation" />
+  <StatListItem value="ERC-4337" label="account abstraction standard" />
+  <StatListItem value="per-agent" label="scoped wallet permissions" />
+  <StatListItem value="instant" label="key revocation" />
+</StatList>
