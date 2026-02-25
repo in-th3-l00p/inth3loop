@@ -39,7 +39,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            Technologies and partners we work with
+            technologies and partners we work with
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -70,13 +70,11 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="Building things that matter"
+        title="building things that matter"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe in the power of technology to create meaningful change.
-          Every project we take on is an opportunity to raise the bar on what
-          software can be — thoughtful, well-crafted, and built to last.
+          we're into anything that pushes the boundaries of what's achivable<br /> in the most creative way possible
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -187,12 +185,11 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">
-            Software crafted at the edge of innovation.
+            welcome to th3 loop
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a software organization driven by the latest innovations in
-            technology, committed to quality and inclined towards authentic
-            artistic products that push boundaries.
+            software innovation organization,<br /> 
+            through blockchain & ML adoption in real world use cases
           </p>
         </FadeIn>
       </Container>

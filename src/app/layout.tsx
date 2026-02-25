@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: {
     template: '%s - inth3loop.org',
     default:
-      'inth3loop.org - Software organization building at the edge of innovation',
+      'inth3loop.org',
   },
 }
 
