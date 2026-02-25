@@ -39,7 +39,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            Technologies and partners we work with
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -70,13 +70,13 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="Building things that matter"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          We believe in the power of technology to create meaningful change.
+          Every project we take on is an opportunity to raise the bar on what
+          software can be — thoughtful, well-crafted, and built to last.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -126,13 +126,13 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        eyebrow="What we do"
+        title="We build software that stands at the intersection of innovation and craft."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          From concept to deployment, we bring a quality-first approach to every
+          layer of the stack — always exploring what is next in technology.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -147,24 +147,25 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Software engineering">
+              We design and build robust, scalable software — from web
+              applications to backend systems — using modern frameworks and
+              battle-tested architectures.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Creative technology">
+              We explore the space where code meets art, building interactive
+              experiences and digital products with a distinctive aesthetic
+              sensibility.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Innovation R&D">
+              We stay ahead of the curve by researching and prototyping with
+              emerging technologies — AI, real-time systems, and novel
+              interfaces.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Technical consulting">
+              We help teams navigate complex technical decisions, from
+              architecture design to technology selection, with a focus on
+              long-term quality.
             </ListItem>
           </List>
         </div>
@@ -175,7 +176,7 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'inth3loop.org is a software organization building at the edge of innovation, focused on quality and authentic artistic products.',
 }
 
 export default async function Home() {
@@ -186,12 +187,12 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">
-            Award-winning development studio based in Denmark.
+            Software crafted at the edge of innovation.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            We are a software organization driven by the latest innovations in
+            technology, committed to quality and inclined towards authentic
+            artistic products that push boundaries.
           </p>
         </FadeIn>
       </Container>
@@ -202,11 +203,11 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'inth3loop', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        Quality is not an act, it is a habit. We build every product with the
+        conviction that authentic craftsmanship and cutting-edge technology are
+        not opposites — they are the same thing.
       </Testimonial>
 
       <Services />
