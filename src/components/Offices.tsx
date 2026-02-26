@@ -39,8 +39,8 @@ export function Offices({
         </Office>
       </li>
       <li>
-        <Office name="Romania" invert={invert}>
-          founded by Cătălin Tișcă
+        <Office name="Cătălin Tișcă" invert={invert}>
+          admin@tiscacatalin.com
           <br />
           tiscacatalin.com
         </Office>

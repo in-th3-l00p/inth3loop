@@ -87,7 +87,7 @@ function CaseStudies({
 export const metadata: Metadata = {
   title: 'our work',
   description:
-    'real projects we have built — from smart contract wallets to full-stack web applications.',
+    'real projects we have built, from smart contract wallets to full-stack web applications.',
 }
 
 export default async function Work() {

@@ -31,7 +31,7 @@ function Culture() {
         <GridList>
           <GridListItem title="craftsmanship" invert>
             every line of code, every design decision, every architecture choice
-            is made with intention. we don't ship "good enough" — we ship work
+            is made with intention. we don't ship "good enough". we ship work
             we are proud to put our name on.
           </GridListItem>
           <GridListItem title="curiosity" invert>
@@ -126,7 +126,7 @@ export default async function About() {
       <PageIntro eyebrow="about us" title="building at the edge of what's possible">
         <p>
           inth3loop.org is a software organization focused on the latest
-          innovations in technology — building quality-driven, authentic
+          innovations in technology, building quality-driven, authentic
           products that push boundaries while staying grounded in real-world
           utility.
         </p>
@@ -135,13 +135,13 @@ export default async function About() {
             founded by Cătălin Tișcă, inth3loop started from a simple
             conviction: the most impactful technology is built at the
             intersection of disciplines. blockchain and AI are not just tools
-            — they are fundamental shifts in how software can work. we build
+            they are fundamental shifts in how software can work. we build
             products that ride those shifts.
           </p>
           <p>
             from smart contract wallets that give AI agents autonomous
             payment capabilities, to cryptographic verification layers that
-            replace trust with proof — every project we take on exists
+            replace trust with proof, every project we take on exists
             because we believe the technology is ready and the problem is
             real.
           </p>

@@ -125,7 +125,7 @@ function Services() {
         <p>
           software alone is not enough to create a useful product. we focus on
           building with a balance of creativity, quality, and innovation
-          — using the most capable technologies available.
+          using the most capable technologies available.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -141,8 +141,8 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">
             <ListItem title="software engineering">
-              we design and build robust, scalable software — from web
-              applications to smart contracts — using modern frameworks and
+              we design and build robust, scalable software, from web
+              applications to smart contracts, using modern frameworks and
               battle-tested architectures.
             </ListItem>
             <ListItem title="blockchain & web3">
@@ -151,8 +151,8 @@ function Services() {
               and protocol integrations.
             </ListItem>
             <ListItem title="AI & machine learning">
-              we research and prototype with emerging AI technologies — from
-              document ingestion pipelines to agent frameworks — and ship them
+              we research and prototype with emerging AI technologies, from
+              document ingestion pipelines to agent frameworks, and ship them
               as production-grade products.
             </ListItem>
             <ListItem title="product strategy">
@@ -199,7 +199,7 @@ export default async function Home() {
       >
         quality is not an act, it is a habit. we build every product with the
         conviction that authentic craftsmanship and cutting-edge technology
-        are not opposites — they are the same thing.
+        are not opposites, they are the same thing.
       </Testimonial> */}
 
       <Services />
