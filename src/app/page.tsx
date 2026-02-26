@@ -189,14 +189,14 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
+      {/* <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'inth3loop', logo: <TestimonialIcon name="wallet" className="h-8 w-8 stroke-neutral-950 stroke-[1]" /> }}
       >
         quality is not an act, it is a habit. we build every product with the
         conviction that authentic craftsmanship and cutting-edge technology
         are not opposites — they are the same thing.
-      </Testimonial>
+      </Testimonial> */}
 
       <Services />
 

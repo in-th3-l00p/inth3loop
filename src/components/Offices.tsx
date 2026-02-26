@@ -32,15 +32,15 @@ export function Offices({
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Remote-first" invert={invert}>
-          Worldwide
+        <Office name="remote-first" invert={invert}>
+          worldwide
           <br />
           inth3loop.org
         </Office>
       </li>
       <li>
         <Office name="Romania" invert={invert}>
-          Founded by Cătălin Tișcă
+          founded by Cătălin Tișcă
           <br />
           tiscacatalin.com
         </Office>
