@@ -15,14 +15,18 @@ import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
 
 const technologies = [
-  'Next.js / React',
-  'TypeScript',
-  'Solidity / EVM',
+  'EVM',
   'ERC-4337',
   'zero knowledge proofs',
   'AI / ML',
-  'Node.js',
-  'Tailwind CSS',
+  'account abstraction',
+  'smart contracts',
+  'on-chain verification',
+  'agent frameworks',
+  'cryptographic proofs',
+  'digital product passports',
+  'decentralized identity',
+  'supply chain verification',
 ]
 
 function Technologies() {
