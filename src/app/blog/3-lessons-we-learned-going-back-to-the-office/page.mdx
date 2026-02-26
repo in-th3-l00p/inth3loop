@@ -1,13 +1,13 @@
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 
 export const article = {
-  date: '2023-02-18',
-  title: '3 Lessons We Learned Going Back to the Office',
+  date: '2026-02-10',
+  title: 'building at the intersection of blockchain and AI',
   description:
-    'Earlier this year we made the bold decision to make everyone come back to the office full-time after two years working from a dressing table in the corner of their bedroom.',
+    'blockchain and AI are converging in ways most people did not predict. here is why the intersection matters, what we are building there, and what comes next.',
   author: {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
+    name: 'Cătălin Tișcă',
+    role: 'founder of inth3loop',
     image: { src: imageLeslieAlexander },
   },
 }
@@ -17,34 +17,40 @@ export const metadata = {
   description: article.description,
 }
 
-## 1. Efficiency is Hard to Measure
+## two technologies, one thesis
 
-Although almost every practical measure of our productivity decreased significantly after returning to the office, as a management team we felt this incredible uptick in energy. We realised that there is an intangible benefit to seeing everyone’s screen at all times, that isn’t easily measurable in numbers.
+blockchain and AI are usually discussed as separate revolutions. one is about decentralization and trustless verification. the other is about pattern recognition and automation. on the surface, they have nothing in common.
 
-Sure, we tried to recreate this feeling during our remote days with employee monitoring software but we always had this nagging doubt that our developers had hacked their way around it.
-
-<TopTip>
-  Getting one of those old-timey punch clocks is a great way to monitor
-  attendance while maintaining a fun atmosphere. Expect to hear things like
-  “Back at the coalface today!”.
-</TopTip>
+but look closer and the intersection becomes obvious. AI systems need to transact. blockchain systems need intelligence. and both technologies are solving the same fundamental problem from different angles: how do you build systems that work without requiring blind trust?
 
 ![](./punch-clock.jpg)
 
-## 2. Turnover: a Fresh Perspective
+## AI agents need on-chain rails
 
-We parted ways with almost all of our senior development team within the first month of going back to the office, due to some irreconcilable differences. Stressed and worried, we decided to try turn this into a positive.
+the first wave of AI applications were assistants — chatbots that answer questions and generate content. the next wave is agents: autonomous systems that take actions on behalf of users.
 
-Luckily for us, it was the same week that CoPilot launched and we were able to replace everyone with five bootcamp graduates all logged into one Github account.
+the moment an agent needs to pay for something — an API call, a dataset, a service — it needs a way to hold and transfer value. traditional payment rails (credit cards, bank transfers) were not designed for machines. they require human identity verification, are slow, and cannot enforce programmatic spending limits.
 
-We have been consistently surprised at the fresh energy these new grads brought to our organisation and have since vowed to never hire anyone with more than 3 months experience again.
+blockchain solves this natively. a smart contract wallet can hold value, enforce spending rules, and execute payments in seconds. account abstraction (ERC-4337) adds the programmable guardrails that make this safe: session keys, budget limits, and instant revocation.
+
+this is exactly what we built with sigloop. not because "crypto + AI" sounds good on a pitch deck, but because there is genuinely no better infrastructure for autonomous machine payments.
 
 ![](./graduation.jpg)
 
-## 3. Cost Efficiency
+## blockchain systems need AI
 
-Demand is at an all time low for commercial real-estate, which means it’s never been more affordable to cram forty people into an open plan office.
+the other direction is equally compelling. supply chain verification — the domain veridis operates in — requires processing mountains of unstructured data: invoices, certificates, spec sheets, lab results. these documents come in every format, language, and structure imaginable.
 
-What’s more, is we’ve found that we can offer extremely low-cost perks like a snack cupboard or free beer in-lieu of higher salaries. For every foosball table we buy, we find we can offer around 5% less salary per job posting. Our full-time barista is the highest paid employee, after management.
+zero knowledge proofs can verify claims cryptographically, but someone (or something) has to extract the data from raw documents first. this is where AI-powered document ingestion becomes essential. the AI normalizes the data; the ZKP proves the claim. neither technology works as well alone.
+
+more broadly, blockchain systems generate enormous amounts of on-chain data that is transparent but difficult to interpret. AI can monitor smart contracts, detect anomalies, flag suspicious transactions, and provide real-time analytics that would be impossible for humans to produce at scale.
 
 ![](./jars.jpg)
+
+## what comes next
+
+the convergence of blockchain and AI is still early. most projects in this space are either using blockchain as a token incentive layer for AI training data, or using AI for trading bots. both are valid but neither captures the full picture.
+
+the real opportunity is in building infrastructure where AI and blockchain are not just adjacent but deeply integrated — where one technology is fundamentally better because the other exists. wallets that understand intent. verification systems that process unstructured data into cryptographic proofs. agent networks that transact, verify, and coordinate without human intervention.
+
+this is what we are building at inth3loop. not because the intersection is trendy, but because the products that emerge from it are genuinely better than what either technology could produce alone.

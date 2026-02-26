@@ -1,5 +1,4 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { CaseStudyIcon } from '@/components/CaseStudyIcon'
@@ -10,37 +9,29 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import { CaseStudyIcon as TestimonialIcon } from '@/components/CaseStudyIcon'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
 
-const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+const technologies = [
+  'Next.js / React',
+  'TypeScript',
+  'Solidity / EVM',
+  'ERC-4337',
+  'zero knowledge proofs',
+  'AI / ML',
+  'Node.js',
+  'Tailwind CSS',
 ]
 
-function Clients() {
+function Technologies() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            technologies and partners we work with
+            technologies we build with
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -49,10 +40,12 @@ function Clients() {
             role="list"
             className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
           >
-            {clients.map(([client, logo]) => (
-              <li key={client}>
+            {technologies.map((tech) => (
+              <li key={tech}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <span className="font-display text-base font-semibold text-white">
+                    {tech}
+                  </span>
                 </FadeIn>
               </li>
             ))}
@@ -75,7 +68,8 @@ function CaseStudies({
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          we're into anything that pushes the boundaries of what's achivable<br /> in the most creative way possible
+          we build at the intersection of blockchain and AI, turning emerging
+          technology into products that solve real problems.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -120,15 +114,14 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="explanation"
-        title="the philosophy behind the organization's releases"
+        eyebrow="what we do"
+        title="technology with purpose, built with craft"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          after everything that has happened in development, only software is simply
-          not enough for creating a useful product. therefore we focus on building a 
-          product with a good balance of creativity, quality and innovation \w using 
-          the most unique technologies available.
+          software alone is not enough to create a useful product. we focus on
+          building with a balance of creativity, quality, and innovation
+          — using the most capable technologies available.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -143,25 +136,25 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-132 lg:pl-4">
-            <ListItem title="Software engineering">
-              We design and build robust, scalable software — from web
-              applications to backend systems — using modern frameworks and
+            <ListItem title="software engineering">
+              we design and build robust, scalable software — from web
+              applications to smart contracts — using modern frameworks and
               battle-tested architectures.
             </ListItem>
-            <ListItem title="Creative technology">
-              We explore the space where code meets art, building interactive
-              experiences and digital products with a distinctive aesthetic
-              sensibility.
+            <ListItem title="blockchain & web3">
+              we build on-chain systems that work: account abstraction wallets,
+              zero knowledge proof pipelines, smart contract infrastructure,
+              and protocol integrations.
             </ListItem>
-            <ListItem title="Innovation R&D">
-              We stay ahead of the curve by researching and prototyping with
-              emerging technologies — AI, real-time systems, and novel
-              interfaces.
+            <ListItem title="AI & machine learning">
+              we research and prototype with emerging AI technologies — from
+              document ingestion pipelines to agent frameworks — and ship them
+              as production-grade products.
             </ListItem>
-            <ListItem title="Technical consulting">
-              We help teams navigate complex technical decisions, from
+            <ListItem title="product strategy">
+              we help teams navigate complex technical decisions, from
               architecture design to technology selection, with a focus on
-              long-term quality.
+              long-term quality and real-world utility.
             </ListItem>
           </List>
         </div>
@@ -186,24 +179,24 @@ export default async function Home() {
             welcome to th3 loop
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            software innovation organization,<br /> 
-            through blockchain & ML adoption in real world use cases
+            a software innovation organization, building at the intersection
+            of blockchain, AI, and real world use cases.
           </p>
         </FadeIn>
       </Container>
 
-      <Clients />
+      <Technologies />
 
       <CaseStudies caseStudies={caseStudies} />
 
-      {/* <Testimonial
+      <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'inth3loop', logo: logoPhobiaDark }}
+        client={{ name: 'inth3loop', logo: <TestimonialIcon name="wallet" className="h-8 w-8 stroke-neutral-950 stroke-[1]" /> }}
       >
-        Quality is not an act, it is a habit. We build every product with the
-        conviction that authentic craftsmanship and cutting-edge technology are
-        not opposites — they are the same thing.
-      </Testimonial> */}
+        quality is not an act, it is a habit. we build every product with the
+        conviction that authentic craftsmanship and cutting-edge technology
+        are not opposites — they are the same thing.
+      </Testimonial>
 
       <Services />
 

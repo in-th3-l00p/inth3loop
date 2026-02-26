@@ -56,40 +56,42 @@ function Section({
 
 function Discover() {
   return (
-    <Section title="Discover" image={{ src: imageWhiteboard }}>
+    <Section title="discover" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          every project starts with understanding the{' '}
+          <strong className="font-semibold text-neutral-950">problem</strong>{' '}
+          deeply enough to know whether the technology we are reaching for
+          is the right fit. we research the domain, study existing solutions,
+          and identify where the real gaps are.
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
+          for sigloop, this meant understanding why existing wallet
+          infrastructure failed AI agents. for veridis, it meant mapping the
+          entire supply chain verification landscape and identifying where
+          cryptographic proof could replace blind{' '}
+          <strong className="font-semibold text-neutral-950">trust</strong>.
         </p>
         <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+          once we understand the landscape, we define the technical{' '}
+          <strong className="font-semibold text-neutral-950">
+            architecture
+          </strong>{' '}
+          and scope a first version that proves the core thesis — nothing more,
+          nothing less.
         </p>
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
+        included in this phase
       </h3>
       <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>domain research</TagListItem>
+        <TagListItem>competitive analysis</TagListItem>
+        <TagListItem>technical feasibility</TagListItem>
+        <TagListItem>architecture design</TagListItem>
+        <TagListItem>scope definition</TagListItem>
+        <TagListItem>proof of concept</TagListItem>
       </TagList>
     </Section>
   )
@@ -97,35 +99,33 @@ function Discover() {
 
 function Build() {
   return (
-    <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="build" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          we build iteratively, shipping working increments that can be tested
+          against reality. every smart contract is audited before deployment.
+          every API is designed for the consumers that will actually use it.
+          every interface is built to be understood without a manual.
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
+          we work in the open whenever possible — our projects are open source
+          by default. this keeps us honest and forces us to write code that
+          others can read, review, and contribute to.
         </p>
         <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+          communication is direct and frequent. we don't hide behind project
+          management tools or status reports. if something is blocked, you
+          hear about it the same day. if a better approach emerges mid-build,
+          we discuss it immediately.
         </p>
       </div>
 
       <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
+        author={{ name: 'Cătălin Tișcă', role: 'founder of inth3loop' }}
         className="mt-12"
       >
-        Studio were so regular with their progress updates we almost began to
-        think they were automated!
+        the best products are built by people who use what they ship. every
+        tool we build is something we would stake our own work on.
       </Blockquote>
     </Section>
   )
@@ -133,52 +133,51 @@ function Build() {
 
 function Deliver() {
   return (
-    <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="deliver" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+          delivery is not the end — it is where the product meets{' '}
+          <strong className="font-semibold text-neutral-950">reality</strong>.
+          we deploy to production with monitoring, documentation, and a clear
+          plan for what comes next.
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on social media.
+          for on-chain systems, this means verifying contracts on block
+          explorers, publishing SDK documentation, and ensuring that every{' '}
+          <strong className="font-semibold text-neutral-950">
+            integration path
+          </strong>{' '}
+          works as expected. for AI pipelines, it means validating accuracy
+          against real-world data and setting up feedback loops.
         </p>
         <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+          we write whitepapers and technical documentation that explain not
+          just how the system works, but{' '}
+          <strong className="font-semibold text-neutral-950">why</strong> it
+          was built this way. the goal is that anyone — a developer, a
+          regulator, a user — can understand and verify the system
+          independently.
         </p>
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
+        included in this phase
       </h3>
       <List className="mt-8">
-        <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+        <ListItem title="testing & auditing">
+          smart contracts are tested exhaustively and audited before mainnet
+          deployment. APIs are load-tested. every critical path has automated
+          coverage.
         </ListItem>
-        <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+        <ListItem title="documentation">
+          whitepapers, SDK references, integration guides — we document
+          everything so the product can stand on its own without us in the
+          room.
         </ListItem>
-        <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+        <ListItem title="open source release">
+          code is published on GitHub with clear READMEs, contribution
+          guidelines, and issue templates. we build in public because it
+          makes everything better.
         </ListItem>
       </List>
     </Section>
@@ -196,43 +195,47 @@ function Values() {
       </div>
 
       <SectionIntro
-        eyebrow="Our values"
-        title="Balancing reliability and innovation"
+        eyebrow="our values"
+        title="technology with integrity"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+          we build at the edge of what is possible, but we do it with
+          principles that keep us grounded. these values shape every
+          decision we make.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+          <GridListItem title="authenticity">
+            we don't build things to look impressive on a slide deck. every
+            project exists because the problem is real, the technology is
+            ready, and the solution is genuinely useful.
           </GridListItem>
-          <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+          <GridListItem title="quality">
+            we would rather ship one excellent product than five mediocre
+            ones. quality is not a phase — it is embedded in every commit,
+            every review, every deployment.
           </GridListItem>
-          <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+          <GridListItem title="transparency">
+            open source by default. whitepapers that explain the reasoning.
+            documentation that hides nothing. if it cannot withstand
+            scrutiny, it should not ship.
           </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+          <GridListItem title="pragmatism">
+            we use the right tool for the job, not the trendiest one.
+            blockchain when immutability matters. AI when pattern
+            recognition matters. plain code when simplicity matters.
           </GridListItem>
-          <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+          <GridListItem title="ownership">
+            we build products we would use ourselves. that means caring about
+            the details that only show up after the demo is over and real
+            users arrive.
           </GridListItem>
-          <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+          <GridListItem title="ambition">
+            the projects worth building are the ones that change how things
+            work. we aim for infrastructure-level impact — systems that
+            other products build on top of.
           </GridListItem>
         </GridList>
       </Container>
@@ -241,19 +244,21 @@ function Values() {
 }
 
 export const metadata: Metadata = {
-  title: 'Our Process',
+  title: 'our process',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'we believe in building iteratively, shipping in the open, and letting real-world feedback shape the product.',
 }
 
 export default function Process() {
   return (
     <RootLayout>
-      <PageIntro eyebrow="Our process" title="How we work">
+      <PageIntro eyebrow="our process" title="how we build">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          we believe in building iteratively, shipping in the open, and
+          letting real-world feedback shape the product. every project
+          follows the same core cycle: understand the problem deeply,
+          build the simplest thing that proves the thesis, then refine
+          until it is production-grade.
         </p>
       </PageIntro>
 

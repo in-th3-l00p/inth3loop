@@ -1,13 +1,13 @@
 import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
 
 export const article = {
-  date: '2023-04-06',
-  title: 'The Future of Web Development: Our Predictions for 2023',
+  date: '2026-02-20',
+  title: 'why zero knowledge proofs matter beyond crypto',
   description:
-    'Let’s explore the latest trends in web development, and regurgitate some predictions we read on X for how they will shape the industry in the coming year.',
+    'zero knowledge proofs are one of the most important cryptographic primitives of this decade. here is why their impact will extend far beyond cryptocurrency and into supply chains, identity, and regulatory compliance.',
   author: {
-    name: 'Chelsea Hagon',
-    role: 'Senior Developer',
+    name: 'Cătălin Tișcă',
+    role: 'founder of inth3loop',
     image: { src: imageChelseaHagon },
   },
 }
@@ -17,32 +17,38 @@ export const metadata = {
   description: article.description,
 }
 
-## 1. AI Assisted Development
+## the problem with trust
 
-With the launch of Github Copilot in 2022 the industry got its first glimpse at what it would look like to have Stack Overflow plumbed straight into your IDE. Copilot has given thousands of developers what they always longed for: plausible deniability over the bugs they write.
+every supply chain runs on trust. a label says "organic" and you believe it. a certificate says "conflict-free" and you accept it. a PDF from a supplier says their factory meets emissions standards and you file it away.
+
+this system worked when supply chains were short and local. it breaks down completely when a single product touches dozens of suppliers across multiple countries, each with their own standards, auditors, and incentives to cut corners.
+
+the result: $1.82 trillion in counterfeit goods globally. food fraud increasing 10% year over year. "organic" and "sustainable" becoming meaningless because nobody can actually verify the claim.
 
 ![](./pilot.jpg)
 
-In 2023 we can expect these assistants to become more sophisticated and for that to have ripple effects throughout the industry.
+## enter zero knowledge proofs
 
-We predict that traffic to MDN will decline precipitously as developers realise they no longer need to look up JS array methods. We also expect Stack Overflow’s sister site, Prompt Overflow, to become one of the most popular sites on the internet in a matter of months.
+a zero knowledge proof lets you prove a statement is true without revealing the underlying data. a supplier can prove their product meets a certification threshold without exposing their pricing, formulas, or customer lists.
 
-## 2. Rendering Patterns
+this is not a theoretical concept anymore. the cryptography is production-ready. the tooling has matured. transaction costs on the chains that anchor these proofs have dropped 99% in three years.
 
-To server render or not to server render? In 2022 the owners of the internet, Vercel, decided that instead of making this choice once for your whole application, now you will need to decide every time you write a new component.
-
-Because front-end development was becoming too easy, the same people who write CSS will now need to know how Streaming SSR and Progressive Hydration work.
+what makes ZKPs fundamentally different from traditional verification is that they are mathematically verifiable. you don't need to trust the auditor, the certifying body, or the supplier. you verify the proof directly. either it is valid or it is not.
 
 ![](./server.jpg)
 
-In 2023 we can expect frameworks to adopt increasingly granular rendering patterns culminating in per-line rendering (PLR) later this year. We can also expect job postings for Rendering Reliability Engineers to reach an all time high.
+## beyond crypto
 
-## 3. JS Runtimes
+the crypto ecosystem popularized zero knowledge proofs for scaling (ZK-rollups) and privacy (private transactions). but the real unlock is what happens when you apply this primitive to the physical world.
 
-Because choosing a JS runtime was one of the only areas where a developer wasn’t paralysed with choice, in early 2020, the creator of Node gave us something new to agonise over. The launch of Deno and Bun heralded the final mutation of JavaScript into a language that can truly run anywhere it wasn’t intended to.
+the EU ESPR will require Digital Product Passports for textiles by 2027, metals by 2028, and electronics by 2029. the Green Claims Directive will make unsubstantiated sustainability claims illegal. every company selling into the EU will need infrastructure to generate and validate proof for their product claims.
 
-These new JS runtimes mean we can now serve HTML faster than ever before. For example, we’ve reduced the Time to First Byte (TTFB) of this blog to -0.4s. That means it actually loaded before you clicked the link.
+this is not a speculative future. the regulation is already passed. the deadlines are set. and the only technology capable of providing privacy-preserving, mathematically verifiable proof at scale is zero knowledge cryptography.
 
 ![](./laptop.jpg)
 
-In 2023 we can expect even faster and more specialised JS runtimes to launch, including the promising Boil, a runtime specifically designed to reduce cold boot times on WiFi enabled kettles. All of these advancements promise to make the future of botnets a truly exciting one.
+## what this means for builders
+
+if you are building in supply chain, compliance, identity, or any domain where "trust me" needs to become "prove it" — zero knowledge proofs are the primitive you should be studying. not because they are novel, but because they are now practical enough to deploy in production at a cost that makes economic sense.
+
+the infrastructure layer for real world cryptographic verification does not exist yet. we are building it with veridis. but the opportunity is far larger than any single project. this is an entire category of software waiting to be created.

@@ -1,13 +1,13 @@
 import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
 
 export const article = {
-  date: '2022-12-01',
-  title: 'A Short Guide to Component Naming',
+  date: '2026-01-15',
+  title: 'account abstraction is the UX upgrade crypto needs',
   description:
-    'As a developer,  the most important aspect of your job is naming components. It’s not just about being descriptive and clear, but also about having fun and being creative.',
+    'ERC-4337 account abstraction eliminates seed phrases, enables programmable wallets, and finally makes crypto usable for people and agents. here is why it matters and how sigloop builds on it.',
   author: {
-    name: 'Angela Fisher',
-    role: 'Front-end Developer',
+    name: 'Cătălin Tișcă',
+    role: 'founder of inth3loop',
     image: { src: imageAngelaFisher },
   },
 }
@@ -17,26 +17,46 @@ export const metadata = {
   description: article.description,
 }
 
-## 1. Brevity is Key
+## the seed phrase problem
 
-Time is scarce, don’t waste it typing out long, descriptive component names. One approach is to give them short, cryptic names that only you will understand.
+crypto has a UX problem that has persisted for over a decade. to use any blockchain application, a user must first generate a wallet, write down a 12 or 24-word seed phrase, and store it somewhere safe. lose the phrase, lose everything. no recovery. no customer support. no second chances.
 
-Need a button? Call it "btn". A modal? How about "md"? You’ll save precious minutes per day and you’ll get the added benefit of being the only person in the codebase who knows where anything is. This is called job security.
+this is not a minor friction point. it is the single biggest barrier to mainstream adoption. billions of dollars have been lost to forgotten seed phrases. and the cognitive load of managing private keys prevents entire categories of users — and now, AI agents — from participating in on-chain economies.
 
 ![](./typewriter.jpg)
 
-## 2. Rank High in Search
+## what account abstraction changes
 
-When working in large repos with lots of collaborators, it’s important that your component ranks high when people search for anything.
+ERC-4337 introduces a new model: instead of using an externally owned account (a raw private key), users interact through smart contract wallets. these wallets are programmable. they can enforce rules, delegate permissions, and recover access through mechanisms that don't depend on a single secret.
 
-One way to stand out is to include all the possible search terms in your component name. Instead of “SignInButton” you might want call it “SignInButtonAuthenticationCookieUserLogIn” which will ensure that it is returned in almost any related search result.
+with account abstraction:
+
+- **passkey onboarding** replaces seed phrases entirely. users authenticate with biometrics — the same way they unlock their phone
+- **session keys** allow temporary, scoped permissions. an AI agent can be granted access to spend up to $50 on a specific contract for the next 24 hours, then the permission expires automatically
+- **gas sponsorship** means users don't need to hold ETH to pay transaction fees. the application or a paymaster covers it
+- **batched transactions** combine multiple operations into a single action, reducing friction and cost
 
 ![](./magnifying-glass.jpg)
 
-## 3. Mix Languages
+## why this matters for AI agents
 
-If you work remotely, it’s likely you are on a global team and yet all your components have English names. This slows down your non-english colleagues considerably so you should allow them to use their native tongue when naming components.
+the agentic web is arriving faster than most people expected. AI agents now browse, research, write code, and make decisions. the next frontier is letting them transact autonomously — pay for API calls, purchase data, settle invoices.
 
-You can create an index file that maps all the different languages within your repo. Need a dropdown? Look for “Desplegable”. A form? Search “Форма”. You’ll learn multiple new languages while being more inclusive to your colleagues.
+but giving an AI agent a raw private key is reckless. there is no "undo" on a blockchain. if the agent is compromised, the funds are gone. if the agent malfunctions, same result.
+
+account abstraction solves this by introducing programmable guardrails. with sigloop, every agent gets a wallet with:
+
+- per-agent spending limits enforced on-chain
+- token allowlists that restrict which assets can be moved
+- time-bound permissions that expire automatically
+- instant key revocation when an agent is retired
+
+this is not just a convenience layer. it is the fundamental infrastructure that makes autonomous agent payments safe enough to deploy in production.
 
 ![](./everyday-english.jpg)
+
+## where we are headed
+
+ERC-4337 has been live on Ethereum mainnet since March 2023. the ecosystem of bundlers, paymasters, and wallet SDKs is maturing rapidly. the question is no longer whether account abstraction will become the standard — it is how fast application developers will adopt it.
+
+the projects building on this primitive today will define how the next generation of on-chain applications works. and for the first time, that includes applications where the user is not a human at all.
