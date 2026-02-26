@@ -119,7 +119,7 @@ export const metadata: Metadata = {
 }
 
 export default async function About() {
-  let blogArticles = (await loadArticles()).slice(0, 2)
+  // let blogArticles = (await loadArticles()).slice(0, 2)
 
   return (
     <RootLayout>
@@ -159,12 +159,12 @@ export default async function About() {
 
       <Team />
 
-      <PageLinks
+      {/* <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="from the blog"
         intro="thoughts on building at the intersection of blockchain, AI, and real world problems."
         pages={blogArticles}
-      />
+      /> */}
 
       <ContactSection />
     </RootLayout>

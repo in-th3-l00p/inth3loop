@@ -7,7 +7,7 @@ import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
   {
-    title: 'work',
+    title: 'projects',
     links: [
       { title: 'sigloop', href: '/work/sigloop' },
       { title: 'veridis', href: '/work/veridis' },
@@ -22,11 +22,11 @@ const navigation = [
     ],
   },
   {
-    title: 'company',
+    title: 'organization',
     links: [
       { title: 'about', href: '/about' },
       { title: 'process', href: '/process' },
-      { title: 'blog', href: '/blog' },
+      // { title: 'blog', href: '/blog' },
       { title: 'contact', href: '/contact' },
     ],
   },
