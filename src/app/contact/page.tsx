@@ -13,7 +13,7 @@ function ContactDetails() {
   return (
     <FadeIn>
       <h2 className="font-display text-base font-semibold text-neutral-950">
-        our offices
+        find us
       </h2>
       <p className="mt-6 text-base text-neutral-600">
         we work remote-first, but we are always reachable. here is where
