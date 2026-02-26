@@ -13,6 +13,7 @@ import { Testimonial } from '@/components/Testimonial'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
+import { JsonLd, breadcrumbSchema } from '@/lib/structured-data'
 
 function CaseStudies({
   caseStudies,
@@ -95,6 +96,12 @@ export default async function Work() {
 
   return (
     <RootLayout>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: 'home', url: 'https://inth3loop.org' },
+          { name: 'work', url: 'https://inth3loop.org/work' },
+        ])}
+      />
       <PageIntro
         eyebrow="our work"
         title="proven solutions for real-world problems."

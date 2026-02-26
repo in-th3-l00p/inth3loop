@@ -13,6 +13,7 @@ import { CaseStudyIcon as TestimonialIcon } from '@/components/CaseStudyIcon'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
+import { JsonLd, organizationSchema } from '@/lib/structured-data'
 
 const technologies = [
   'EVM',
@@ -177,6 +178,7 @@ export default async function Home() {
 
   return (
     <RootLayout>
+      <JsonLd data={organizationSchema()} />
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">

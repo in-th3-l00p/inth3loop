@@ -47,6 +47,7 @@ export interface CaseStudy {
   logo: string
   image: ImagePropsWithOptionalAlt
   service: string
+  url: string
   testimonial: {
     author: {
       name: string
